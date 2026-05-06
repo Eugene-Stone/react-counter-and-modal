@@ -1,7 +1,7 @@
 import './Modal.scss';
 import { useState } from 'react';
 
-function Modal({ count }) {
+function Modal({ count }: { count: number }) {
 	const [isOpen, setIsOpen] = useState(false);
 	const showClass = isOpen ? 'show' : '';
 

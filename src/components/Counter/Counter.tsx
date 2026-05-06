@@ -1,6 +1,11 @@
+import { Dispatch, SetStateAction } from 'react';
 import './Counter.scss';
+type CounterType = {
+	count: number;
+	setCount: React.Dispatch<SetStateAction<number>>;
+};
 
-function Counter({ count, setCount }) {
+function Counter({ count, setCount }: CounterType) {
 	function handleCountIncrement() {
 		setCount(count + 1);
 	}

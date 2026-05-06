@@ -1,7 +1,7 @@
 import { Fragment, useState } from 'react';
 
-import Counter from './components/Counter/Counter.jsx';
-import Modal from './components/Modal/Modal.jsx';
+import Counter from './components/Counter/Counter';
+import Modal from './components/Modal/Modal';
 
 function App() {
 	const [count, setCount] = useState(0);
